@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾Para Fernanda🐾</title>
+    
+    <!-- Fuentes de Google: Poiret One (elegante) y Popins (moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Link a Font Awesome para los iconos de corazón, huella y flecha -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- IMPORTACIÓN DE TONE.JS PARA LA MÚSICA DE FONDO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script> 
+    
+    <!-- Link a los estilos CSS (Mismo directorio) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- OVERLAY DE AUDIO: Se muestra al inicio y oculta con el primer clic/tap -->
+    <div id="audioOverlay" class="audio-overlay">
+        <i class="fas fa-heart"></i>
+        <p>Fernanda, ¿Podrías tocar la pantalla?</p>
+        <i class="fas fa-play"></i>
+    </div>
+
+    <!-- SECCIÓN DE BIENVENIDA (PANTALLA COMPLETA) -->
+    <section id="bienvenida">
+        <div class="bienvenida-contenido">
+            <h1 class="titulo-bienvenida">
+                "<i class="fas fa-bone"></i> Sabes Fernanda, me alegra mucho que te gusten los perritos ya que el amor de un perro es para siempre." <i class="fas fa-bone"></i>
+            </h1>
+            <p class="subtitulo-bienvenida">
+                Desliza hacia abajo para descubrir algo bonito.
+            </p>
+            <a href="#galeria-ancla" class="boton-deslizar">
+                <i class="fas fa-arrow-down"></i> Ver la Galería
+            </a>
+        </div>
+    </section>
+
+    <!-- ANCLA: Punto al que saltamos al hacer clic en el botón de la Bienvenida -->
+    <div id="galeria-ancla"></div>
+
+    <header class="header">
+        <h1 class="titulo-principal">
+            <i class="fas fa-paw"></i> ¡Lo más bonito para ti! <i class="fas fa-paw"></i>
+        </h1>
+        <p class="subtitulo">Fernanda abre cada imagen y verás una colección de amor incondicional y ternura.</p>
+    </header>
+
+    <main class="galeria" id="galeriaPerritos">
+        <!-- Las 10 tarjetas de perritos se insertarán aquí dinámicamente con JavaScript -->
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Diseñado con amor canino para ti Fernanda. <i class="fas fa-bone"></i></p>
+    </footer>
+
+    <!-- ESTRUCTURA DEL MODAL (VENTANA EMERGENTE) -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <!-- Botón de cerrar (la X) -->
+            <span class="cerrar-modal">&times;</span>
+            <!-- Imagen ampliada -->
+            <img id="modalImagen" src="" alt="Imagen de Perrito Ampliada">
+            <!-- Frase bonita -->
+            <p id="modalFrase" class="modal-frase">Aquí irá la frase personalizada.</p>
+        </div>
+    </div>
+    <!-- FIN ESTRUCTURA DEL MODAL -->
+
+    <!-- Link al script de JavaScript (Mismo directorio) -->
+    <script src="script.js"></script>
+</body>
+</html>
